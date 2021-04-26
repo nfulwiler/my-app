@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 .task-section {
     display: inline-flex;
     flex-direction: column;
@@ -20,7 +22,7 @@
 .each-task button {
     padding: 0.05rem 0.18rem;
     border: none;
-    border-radius: 25px;
+    border-radius: 50%;
     margin-left: 2%;
     cursor: pointer;
     background-color: #E5E2E2;
@@ -33,6 +35,10 @@
 p {
     font-size: 1.5rem;
     margin-left: 4%;
+}
+
+p.task-elements {
+    font-family: 'Work Sans', sans-serif;
 }
 
 .completed-checkbox {

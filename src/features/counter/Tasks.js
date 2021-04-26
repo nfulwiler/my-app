@@ -13,6 +13,9 @@ export function Tasks() {
   const incompleteTaskColor = { backgroundColor: 'white' };
   const completeTaskColor = { backgroundColor: '#9FFFAA' };
 
+  const completeTaskText = { textDecoration: 'line-through' };
+  const incompleteTaskText = { textDecoration: 'initial' };
+
   const currentlyDisplayed = { display: 'initial' };
   const notDisplayed = { display: 'none' };
 
@@ -43,7 +46,7 @@ export function Tasks() {
       {tasks.map((task) => (
         <div className="each-task" style={completedTasks.includes(task) ? completeTaskColor : incompleteTaskColor}>
           <button className="task-elements" onClick={() => {dispatch(removeTask(task))}}>x</button>
-          <p className="task-elements">{task}</p>
+          <p className="task-elements" style={completedTasks.includes(task) ? completeTaskText : incompleteTaskText}>{task}</p>
           <input type="checkbox" className="task-elements completed-checkbox" onChange={() => {handleComplete(task)}} checked={completedTasks.includes(task) ? true : false} />
         </div>
       ))}

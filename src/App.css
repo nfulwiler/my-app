@@ -10,8 +10,10 @@
 
 h1 {
   font-family: 'Balsamiq Sans', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
 }
 
 .text-input, .add-button {
@@ -27,13 +29,13 @@ h1 {
   height: 2.5rem;
   width: 50%;
   border: none;
-  outline: none;
+  outline-color: #7e314c;
   border-radius: 5px;
 }
 
 .add-button {
   font-size: 1.25rem;
-  margin-top: 7.5%;
+  margin-top: 10%;
   border: none;
   border-radius: 25px;
   padding: 1rem 2.25rem;

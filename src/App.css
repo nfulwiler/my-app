@@ -8,12 +8,19 @@
   width: 50%;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Balsamiq Sans', cursive;
-  font-size: 3rem;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 3px black;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .text-input, .add-button {
@@ -25,7 +32,7 @@ h1 {
 .text-input {
   font-size: 1.7rem;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
   height: 2.5rem;
   width: 50%;
   border: none;

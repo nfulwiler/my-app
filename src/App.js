@@ -32,6 +32,7 @@ function App() {
       <div className="outer-container">
         <div className="input-button-section">
           <h1>{getGreeting()}</h1>
+          <h2>Time to get some stuff done!</h2>
           <input ref={inputElement} type="text" placeholder="Add a task" className="text-input" />
           <button className="add-button" onClick={handleClick}>Add</button>
           <TaskCompletedResponse />

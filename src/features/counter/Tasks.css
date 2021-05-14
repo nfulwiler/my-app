@@ -67,3 +67,10 @@ label {
 .no-tasks-text {
     margin-left: initial;
 }
+
+@media only screen and (max-width: 800px) {
+    .task-section {
+        margin-right: auto;
+        margin-top: 10%;
+    }
+}

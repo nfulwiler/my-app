@@ -45,14 +45,14 @@ export function Tasks() {
     <div className="task-section">
       {tasks.map((task) => (
         <div className="each-task" style={completedTasks.includes(task) ? completeTaskColor : incompleteTaskColor}>
-          <button className="task-elements" onClick={() => {dispatch(removeTask(task))}}>x</button>
+          <button aria-label="Remove task" className="task-elements" onClick={() => {dispatch(removeTask(task))}}>x</button>
           <p className="task-elements" style={completedTasks.includes(task) ? completeTaskText : incompleteTaskText}>{task}</p>
-          <input type="checkbox" className="task-elements completed-checkbox" onChange={() => {handleComplete(task)}} checked={completedTasks.includes(task) ? true : false} />
+          <input type="checkbox" aria-label="Mark task as complete" className="task-elements completed-checkbox" onChange={() => {handleComplete(task)}} checked={completedTasks.includes(task) ? true : false} />
         </div>
       ))}
       <div className="checkbox-area" style={tasks.length > 0 ? currentlyDisplayed : notDisplayed}>
           <input type="checkbox" id="remove-when-complete" name="remove-when-complete" className="task-elements" onChange={() => removeOnCompletedCheckbox()} />
-          <label for="remove-when-complete">Remove tasks when marked complete</label>
+          <label htmlFor="remove-when-complete">Remove tasks when marked complete</label>
       </div>
       <p className="no-tasks-text" style={tasks.length > 0 ? notDisplayed : currentlyDisplayed}>Tasks will show up here!</p>
     </div>

@@ -57,10 +57,6 @@ h2 {
   color: #7e314c;
 }
 
-.add-button:focus {
-  outline: none;
-}
-
 @media only screen and (max-width: 800px) {
   .outer-container {
     flex-direction: column;
